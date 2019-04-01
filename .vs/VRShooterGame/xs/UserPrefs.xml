@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{458E2981-69CA-C869-3A70-A1BAC501FD43}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/02.Scripts/StageAD/Target.cs">
+    <Files>
+      <File FileName="Assets/02.Scripts/GameUI/GameUIMangaer.cs" Line="15" Column="31" />
+      <File FileName="Assets/02.Scripts/EnemyAD/EnemyDamage.cs" Line="18" Column="31" />
+      <File FileName="Assets/02.Scripts/StageAD/Target.cs" Line="16" Column="32" />
+      <File FileName="Assets/02.Scripts/GameUI/GameUICameraRaycast.cs" Line="5" Column="17" NotebookId="1" />
+      <File FileName="Assets/02.Scripts/PlayerAD/PlayerCtroll.cs" Line="33" Column="10" NotebookId="1" />
+      <File FileName="Assets/02.Scripts/PlayerAD/Damage.cs" Line="42" Column="6" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="VRShooterGame" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="02.Scripts" expanded="True">
+                <Node name="EnemyAD" expanded="True" />
+                <Node name="GameUI" expanded="True" />
+                <Node name="PlayerAD" expanded="True" />
+                <Node name="StageAD" expanded="True">
+                  <Node name="Target.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
