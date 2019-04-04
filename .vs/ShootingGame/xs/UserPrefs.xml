@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{4C29D328-2221-BEEB-FDBB-E772EA262183}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/02.Scripts/GameManager.cs">
+    <Files>
+      <File FileName="Assets/02.Scripts/EnemyAD/EnemyDamage.cs" Line="22" Column="50" />
+      <File FileName="Assets/02.Scripts/GameManager.cs" Line="42" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ShootingGame" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="02.Scripts" expanded="True">
+                <Node name="EnemyAD" expanded="True" />
+                <Node name="GameManager.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

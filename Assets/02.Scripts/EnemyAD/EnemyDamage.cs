@@ -6,6 +6,7 @@ public class EnemyDamage : MonoBehaviour
 {
     private float hp = 1000.0f;
     public GameObject bloodEffect;
+    private int score = 5;
     EnemyAI enemyAI;
 
     private void Start()
@@ -18,6 +19,7 @@ public class EnemyDamage : MonoBehaviour
         hp -= (int)_params[1];
         if(hp<= 0)
         {
+            GameManager.instance.AddScore(score);
             enemyAI.state = EnemyAI.State.DIE;
         }
     }
