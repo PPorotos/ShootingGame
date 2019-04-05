@@ -19,8 +19,8 @@ public class EnemyDamage : MonoBehaviour
         hp -= (int)_params[1];
         if(hp<= 0)
         {
-            GameManager.instance.AddScore(score);
             enemyAI.state = EnemyAI.State.DIE;
+            GameManager.instance.AddScore(score);
         }
     }
 

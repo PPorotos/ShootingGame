@@ -11,12 +11,15 @@ public class GameManager : MonoBehaviour
 
     public Text scoreText;
     public Text bestScoreText;
+    public GameObject gameOver;
+    public PlayerCtroll playerControl;
+    public EnemyFire enemyFire;
 
     private void Awake()
     {
         instance = this;
         UpdateUI();
-
+        Reset();
     }
     public void AddScore(int newScore)
     {
@@ -41,5 +44,29 @@ public class GameManager : MonoBehaviour
         int bestScore = PlayerPrefs.GetInt("BestScore");
         return bestScore;
     }
+    public void PlayerDie(bool check)
+    {
+        if (check)
+        {
+            gameOver.SetActive(true);
+            enemyFire.enabled = false;
+            playerControl.enabled = false;
 
+        }
+    }
+    public void GameClear(bool check)
+    {
+        if (check)
+        {
+            enemyFire.enabled = false;
+            playerControl.enabled = false;
+        }
+    }
+    private void Reset()
+    {
+        score = 0;
+        gameOver.SetActive(false);
+        enemyFire.enabled = true;
+        playerControl.enabled = true;
+    }
 }

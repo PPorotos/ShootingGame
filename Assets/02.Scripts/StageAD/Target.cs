@@ -6,14 +6,16 @@ using UnityEngine.UI;
 public class Target : MonoBehaviour
 {
     private float initHp = 500.0f;
+    private int socre = 100;
+    private bool clear = false;
     public float currHp;
     public Image targetHpBar;
-    public Text success;
+    public GameObject success;
 
     private void Start()
     {
         currHp = initHp;
-        success.enabled = false;
+        success.SetActive(false);
     }
     private void Update()
     {
@@ -34,8 +36,11 @@ public class Target : MonoBehaviour
 
         if(currHp <= 0f)
         {
+            clear = true;
+            GameManager.instance.AddScore(socre);
+            GameManager.instance.GameClear(clear);
             Destroy(gameObject);
-            success.enabled = true;
+            success.SetActive(true);
         }
 
     }

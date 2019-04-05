@@ -7,8 +7,10 @@ public class Damage : MonoBehaviour
 {
     private const string bulletTag = "BULLET";
     private float initHp = 100.0f;
+    private bool playerDieCheck = false;
     public float currHp;
     public Image hpBar;
+
 
     private void Start()
     {
@@ -34,12 +36,10 @@ public class Damage : MonoBehaviour
 
             if (currHp <= 0.0f)
             {
-                PlayerDie();
+                playerDieCheck = true;
+                GameManager.instance.PlayerDie(playerDieCheck);
             }
         }
     }
-    void PlayerDie()
-    {
-        Debug.Log("Player Die");
-    }
+
 }
