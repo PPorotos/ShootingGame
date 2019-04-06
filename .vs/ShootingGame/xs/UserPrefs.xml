@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{4C29D328-2221-BEEB-FDBB-E772EA262183}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/02.Scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/02.Scripts/PlayerAD/Damage.cs">
     <Files>
       <File FileName="Assets/02.Scripts/EnemyAD/EnemyDamage.cs" Line="22" Column="42" />
-      <File FileName="Assets/02.Scripts/StageAD/Target.cs" Line="41" Column="10" />
+      <File FileName="Assets/02.Scripts/StageAD/Target.cs" Line="48" Column="1" />
       <File FileName="Assets/02.Scripts/EnemyAD/EnemyAI.cs" Line="110" Column="14" />
-      <File FileName="Assets/02.Scripts/GameManager.cs" Line="14" Column="5" />
+      <File FileName="Assets/02.Scripts/GameManager.cs" Line="69" Column="18" />
+      <File FileName="Assets/02.Scripts/PlayerAD/PlayerCtroll.cs" Line="1" Column="1" />
+      <File FileName="Assets/02.Scripts/PlayerAD/Damage.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,10 +14,9 @@
           <Node name="ShootingGame" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="02.Scripts" expanded="True">
-                <Node name="EnemyAD" expanded="True" />
-                <Node name="PlayerAD" expanded="True" />
-                <Node name="StageAD" expanded="True" />
-                <Node name="GameManager.cs" selected="True" />
+                <Node name="PlayerAD" expanded="True">
+                  <Node name="Damage.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
