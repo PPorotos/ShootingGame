@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class EnemyDamage : MonoBehaviour
 {
 
-    private float hp = 1000.0f;
+    private float currHp;
+    private float initHp = 1000.0f;
     public GameObject bloodEffect;
+    public GameObject lookCam;
     public Image enemyHP;
     private int score = 5;
     EnemyAI enemyAI;
@@ -16,15 +18,16 @@ public class EnemyDamage : MonoBehaviour
     private void Start()
     {
         enemyAI = GetComponent<EnemyAI>();
+        currHp = initHp;
     }
     void EnemyHitDamage(object[] _params)
     {
         CreateBloodEffect((Vector3)_params[0]);
-        hp -= (int)_params[1];
+        currHp -= (int)_params[1];
 
-        enemyHP.fillAmount = hp * 0.01f;
+        enemyHP.fillAmount = currHp /initHp;
 
-        if(hp<= 0)
+        if(currHp <= 0)
         {
             enemyAI.state = EnemyAI.State.DIE;
             GameManager.instance.AddScore(score);
@@ -33,7 +36,7 @@ public class EnemyDamage : MonoBehaviour
 
     private void FixedUpdate()
     {
-        enemyHP.transform.LookAt(Camera.main.transform.forward);
+        lookCam.transform.LookAt(Camera.main.transform);
     }
     void CreateBloodEffect(Vector3 position)
     {

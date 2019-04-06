@@ -65,14 +65,14 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 03ff1f34d2b9a4348a263cd3fc816a99, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
   m_UseSpriteMesh: 0
 --- !u!1 &260533239
 GameObject:
@@ -482,6 +482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodEffect: {fileID: 1000013169864706, guid: e5a3d6da48298a0458c1990f58c27069,
     type: 3}
+  lookCam: {fileID: 260533239}
+  enemyHP: {fileID: 164786452}
 --- !u!1 &904087043
 GameObject:
   m_ObjectHideFlags: 0
